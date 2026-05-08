@@ -1,8 +1,15 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+
 import Container from "./container";
 import Button from "../ui/button";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur">
       <Container>
@@ -27,7 +34,30 @@ export default function Navbar() {
               Get Started
             </Button>
           </div>
+
+          <button
+            className="md:hidden"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <X /> : <Menu />}
+          </button>
         </div>
+
+        {isOpen && (
+          <div className="border-t py-6 md:hidden">
+            <nav className="flex flex-col gap-4 text-sm font-medium">
+              <Link href="/">Home</Link>
+              <Link href="/services">Services</Link>
+              <Link href="/portfolio">Portfolio</Link>
+              <Link href="/about">About</Link>
+              <Link href="/contact">Contact</Link>
+
+              <Button className="mt-4 w-full">
+                Get Started
+              </Button>
+            </nav>
+          </div>
+        )}
       </Container>
     </header>
   );
