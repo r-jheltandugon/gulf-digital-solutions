@@ -13,7 +13,7 @@ export default function PortfolioPage() {
             Our Work
           </h1>
 
-          <p className="mt-4 text-slate-600">
+          <p className="mt-4 text-slate-600 dark:text-slate-300">
             Examples of digital solutions we build for businesses.
           </p>
 

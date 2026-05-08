@@ -29,7 +29,7 @@ const steps = [
 
 export default function Process() {
   return (
-    <section className="bg-slate-50 py-24">
+    <section className="py-24">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <p className="font-medium text-blue-600">
@@ -45,7 +45,7 @@ export default function Process() {
           {steps.map((step) => (
             <div
               key={step.number}
-              className="rounded-3xl bg-white p-8 shadow-sm"
+              className="rounded-3xl border p-8 shadow-sm"
             >
               <span className="text-sm font-bold text-blue-600">
                 {step.number}
@@ -55,7 +55,7 @@ export default function Process() {
                 {step.title}
               </h3>
 
-              <p className="mt-4 leading-7 text-slate-600">
+              <p className="mt-4 leading-7 text-slate-600 dark:text-slate-300">
                 {step.description}
               </p>
             </div>

@@ -20,7 +20,7 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <section className="bg-slate-50 py-24">
+    <section className="py-24">
       <Container>
         <div className="mx-auto max-w-3xl">
           <div className="text-center">
@@ -37,13 +37,13 @@ export default function FAQ() {
             {faqs.map((faq) => (
               <div
                 key={faq.question}
-                className="rounded-3xl border bg-white p-8"
+                className="rounded-3xl border p-8"
               >
                 <h3 className="text-xl font-semibold">
                   {faq.question}
                 </h3>
 
-                <p className="mt-4 leading-7 text-slate-600">
+                <p className="mt-4 leading-7 text-slate-600 dark:text-slate-300">
                   {faq.answer}
                 </p>
               </div>

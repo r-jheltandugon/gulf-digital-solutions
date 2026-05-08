@@ -31,7 +31,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9 }}
-            className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600"
+            className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-300"
           >
             We help local businesses attract more customers,
             improve credibility, and generate more inquiries

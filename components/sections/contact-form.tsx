@@ -35,7 +35,7 @@ export default function ContactForm() {
             Contact Us
           </h1>
 
-          <p className="mt-4 text-slate-600">
+          <p className="mt-4 text-slate-600 dark:text-slate-300">
             Tell us about your business and we’ll help you grow online.
           </p>
 

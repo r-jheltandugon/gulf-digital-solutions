@@ -63,7 +63,7 @@ export default function Benefits() {
                   {benefit.title}
                 </h3>
 
-                <p className="mt-3 leading-7 text-slate-600">
+                <p className="mt-3 leading-7 text-slate-600 dark:text-slate-300">
                   {benefit.description}
                 </p>
               </div>

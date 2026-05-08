@@ -50,7 +50,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="bg-slate-50 py-24">
+    <section className="py-24">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <p className="font-medium text-blue-600">
@@ -61,7 +61,7 @@ export default function Services() {
             Helping Businesses Grow Online
           </h2>
 
-          <p className="mt-6 text-lg text-slate-600">
+          <p className="mt-6 text-lg text-slate-600 dark:text-slate-300">
             We create modern digital experiences that help
             businesses build trust, increase visibility, and
             attract more customers.
@@ -75,7 +75,7 @@ export default function Services() {
             return (
               <div
                 key={service.title}
-                className="rounded-3xl border bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                className="rounded-3xl border p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
               >
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-100">
                   <Icon className="text-blue-600" />
@@ -85,7 +85,7 @@ export default function Services() {
                   {service.title}
                 </h3>
 
-                <p className="mt-3 leading-7 text-slate-600">
+                <p className="mt-3 leading-7 text-slate-600 dark:text-slate-300">
                   {service.description}
                 </p>
               </div>

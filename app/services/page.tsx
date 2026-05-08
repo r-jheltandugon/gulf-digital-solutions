@@ -13,7 +13,7 @@ export default function ServicesPage() {
             Our Services
           </h1>
 
-          <p className="mt-4 text-slate-600">
+          <p className="mt-4 text-slate-600 dark:text-slate-300">
             We help businesses grow online through modern digital solutions.
           </p>
 

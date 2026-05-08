@@ -41,7 +41,7 @@ export default function Testimonials() {
               key={testimonial.name}
               className="rounded-3xl border p-8"
             >
-              <p className="leading-7 text-slate-600">
+              <p className="leading-7 text-slate-600 dark:text-slate-300">
                 "{testimonial.quote}"
               </p>
 
