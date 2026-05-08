@@ -1,36 +1,26 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Providers from "@/components/theme-provider";
 
-const inter = Inter({
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
     default: "Gulf Digital Solutions",
     template: "%s | Gulf Digital Solutions",
   },
-  description:
-    "Modern digital solutions that help local businesses grow online.",
-  keywords: [
-    "web design UAE",
-    "digital agency UAE",
-    "business websites",
-    "SEO services",
-    "website development UAE",
-  ],
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
