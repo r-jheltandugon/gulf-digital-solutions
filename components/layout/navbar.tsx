@@ -7,6 +7,8 @@ import { Menu, X } from "lucide-react";
 import Container from "./container";
 import Button from "../ui/button";
 
+import ThemeToggle from "../ui/theme-toggle";
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -34,6 +36,8 @@ export default function Navbar() {
               Get Started
             </Button>
           </div>
+
+          <ThemeToggle />
 
           <button
             className="md:hidden"
