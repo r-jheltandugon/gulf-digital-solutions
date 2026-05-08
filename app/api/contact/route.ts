@@ -1,29 +1,31 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
-import { z } from "zod";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
-const schema = z.object({
-  name: z.string().min(2),
-  email: z.string().email(),
-  message: z.string().min(10),
-});
+type ContactPayload = {
+  name: string;
+  email: string;
+  message: string;
+};
 
 export async function POST(req: Request) {
   try {
-    const body = await req.json();
-    const data = schema.parse(body);
+    const body: ContactPayload = await req.json();
+
+    if (!process.env.RESEND_API_KEY) {
+      throw new Error("Missing RESEND_API_KEY");
+    }
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     await resend.emails.send({
       from: "Gulf Digital Solutions <onboarding@resend.dev>",
       to: "your-email@example.com",
-      subject: "New Website Inquiry",
+      subject: "New Lead",
       html: `
-        <h2>New Lead</h2>
-        <p><b>Name:</b> ${data.name}</p>
-        <p><b>Email:</b> ${data.email}</p>
-        <p><b>Message:</b> ${data.message}</p>
+        <h2>New Contact Form</h2>
+        <p><b>Name:</b> ${body.name}</p>
+        <p><b>Email:</b> ${body.email}</p>
+        <p><b>Message:</b> ${body.message}</p>
       `,
     });
 
@@ -31,7 +33,7 @@ export async function POST(req: Request) {
   } catch (error) {
     return NextResponse.json(
       { success: false },
-      { status: 400 }
+      { status: 500 }
     );
   }
 }
