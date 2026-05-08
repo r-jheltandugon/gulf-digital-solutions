@@ -22,7 +22,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="text-4xl font-bold leading-tight tracking-tight text-slate-900 md:text-6xl"
+            className="text-4xl font-bold leading-tight tracking-tight md:text-6xl"
           >
             Grow Your Business Online With A Strong Digital Presence
           </motion.h1>

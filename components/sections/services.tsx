@@ -57,7 +57,7 @@ export default function Services() {
             Our Services
           </p>
 
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 md:text-5xl">
+          <h2 className="mt-4 text-3xl font-bold tracking-tight md:text-5xl">
             Helping Businesses Grow Online
           </h2>
 
