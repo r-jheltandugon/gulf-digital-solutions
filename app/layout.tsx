@@ -7,9 +7,19 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Gulf Digital Solutions",
+  title: {
+    default: "Gulf Digital Solutions",
+    template: "%s | Gulf Digital Solutions",
+  },
   description:
-    "Modern digital solutions for local businesses in the UAE.",
+    "Modern digital solutions that help local businesses grow online.",
+  keywords: [
+    "web design UAE",
+    "digital agency UAE",
+    "business websites",
+    "SEO services",
+    "website development UAE",
+  ],
 };
 
 export default function RootLayout({
