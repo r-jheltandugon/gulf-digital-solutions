@@ -1,38 +1,42 @@
-import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-type ContactPayload = {
-  name: string;
-  email: string;
-  message: string;
-};
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   try {
-    const body: ContactPayload = await req.json();
+    const body = await req.json();
 
-    if (!process.env.RESEND_API_KEY) {
-      throw new Error("Missing RESEND_API_KEY");
+    const { name, email, message } = body;
+
+    if (!name || !email || !message) {
+      return Response.json(
+        { error: "All fields are required" },
+        { status: 400 }
+      );
     }
 
-    const resend = new Resend(process.env.RESEND_API_KEY);
-
     await resend.emails.send({
-      from: "Gulf Digital Solutions <onboarding@resend.dev>",
-      to: "your-email@example.com",
-      subject: "New Lead",
+      from: "onboarding@resend.dev",
+      to: process.env.CONTACT_EMAIL!,
+      subject: `New Contact Form Message from ${name}`,
+      replyTo: email,
       html: `
-        <h2>New Contact Form</h2>
-        <p><b>Name:</b> ${body.name}</p>
-        <p><b>Email:</b> ${body.email}</p>
-        <p><b>Message:</b> ${body.message}</p>
+        <h2>New Contact Message</h2>
+
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+
+        <p><strong>Message:</strong></p>
+        <p>${message}</p>
       `,
     });
 
-    return NextResponse.json({ success: true });
+    return Response.json({ success: true });
   } catch (error) {
-    return NextResponse.json(
-      { success: false },
+    console.error(error);
+
+    return Response.json(
+      { error: "Something went wrong" },
       { status: 500 }
     );
   }
