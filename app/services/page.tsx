@@ -1,6 +1,7 @@
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import Container from "@/components/layout/container";
+import WhatsAppButton from "@/components/ui/whatsapp-button";
 
 export default function ServicesPage() {
   return (
@@ -35,6 +36,7 @@ export default function ServicesPage() {
       </main>
 
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }

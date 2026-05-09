@@ -6,6 +6,8 @@ import {
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 
+import WhatsAppButton from "@/components/ui/whatsapp-button";
+
 export default function AboutPage() {
   return (
     <>
@@ -14,6 +16,7 @@ export default function AboutPage() {
     <Mission />
     <AboutCTA />
     <Footer />
+    <WhatsAppButton />
     </>
 );
 }
