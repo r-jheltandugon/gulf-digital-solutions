@@ -10,6 +10,7 @@ import FAQ from "@/components/sections/faq";
 import CTA from "@/components/sections/cta";
 
 import WhatsAppButton from "@/components/ui/whatsapp-button";
+import CallButton from "@/components/ui/call-button";
 
 export default function HomePage() {
   return (
@@ -29,6 +30,7 @@ export default function HomePage() {
       <Footer />
 
       <WhatsAppButton />
+      <CallButton />
     </>
   );
 }
