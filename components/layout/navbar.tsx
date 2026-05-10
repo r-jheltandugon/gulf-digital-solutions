@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -25,9 +26,20 @@ export default function Navbar() {
           
           <Link
             href="/"
-            className="text-lg font-bold tracking-tight md:text-xl"
+            className="flex items-center gap-3"
           >
-            Gulf Digital Solutions
+            <Image
+              src="/logo.png"
+              alt="Gulf Digital Solutions Logo"
+              width={40}
+              height={40}
+              className="rounded-full"
+              priority
+            />
+
+            <span className="text-lg font-bold tracking-tight md:text-xl">
+              Gulf Digital Solutions
+            </span>
           </Link>
 
           <nav className="hidden items-center gap-8 text-sm font-medium md:flex">
