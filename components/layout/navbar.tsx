@@ -16,6 +16,13 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-slate-200 backdrop-blur">
       <Container>
         <div className="flex h-16 items-center justify-between">
+          <button
+            className="md:hidden"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <X /> : <Menu />}
+          </button>
+          
           <Link
             href="/"
             className="text-lg font-bold tracking-tight md:text-xl"
@@ -38,13 +45,6 @@ export default function Navbar() {
           </div>
 
           <ThemeToggle />
-
-          <button
-            className="md:hidden"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <X /> : <Menu />}
-          </button>
         </div>
 
         {isOpen && (
