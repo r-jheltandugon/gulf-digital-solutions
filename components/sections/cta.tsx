@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Container from "../layout/container";
 import Button from "../ui/button";
 
@@ -20,7 +21,9 @@ export default function CTA() {
           </p>
 
           <div className="mt-10">
-            <Button>Start Your Project</Button>
+            <Link href="/contact">
+              <Button>Start Your Project</Button>
+            </Link>
           </div>
         </div>
       </Container>

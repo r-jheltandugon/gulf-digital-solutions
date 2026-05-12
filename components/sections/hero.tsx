@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import Container from "../layout/container";
 import Button from "../ui/button";
@@ -45,11 +46,19 @@ export default function Hero() {
             transition={{ duration: 1.1 }}
             className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
-            <Button>Get Free Consultation</Button>
+            <Link href="/contact">
+              <Button>Get Free Consultation</Button>
+            </Link>
 
-            <Button className="bg-slate-900 hover:bg-slate-800">
-              WhatsApp Us
-            </Button>
+            <a
+              href="https://wa.me/971525381161"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-slate-900 hover:bg-slate-800">
+                WhatsApp Us
+              </Button>
+            </a>
           </motion.div>
         </div>
       </Container>

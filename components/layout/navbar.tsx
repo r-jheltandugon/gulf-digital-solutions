@@ -51,9 +51,11 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden md:block">
-            <Button className="px-5 py-2 text-sm">
-              Get Started
-            </Button>
+            <Link href="/contact">
+              <Button className="px-5 py-2 text-sm">
+                Get Started
+              </Button>
+            </Link>
           </div>
 
           <ThemeToggle />
