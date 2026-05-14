@@ -1,13 +1,18 @@
 export const siteConfig = {
   name: "Gulf Digital Solutions",
-  url: "gulfdigitalsolutions.com",
+  url: "https://gulfdigitalsolution.com",
   description:
-    "Modern digital solutions that help local businesses grow online, attract customers, and increase WhatsApp inquiries.",
+    "Professional website design, web advertising, and digital solutions for businesses in Abu Dhabi, Dubai, and across the UAE.",
   keywords: [
-    "web design UAE",
-    "digital agency UAE",
-    "SEO services UAE",
-    "business websites",
-    "website development Abu Dhabi",
+    "website design UAE",
+    "business website design",
+    "web advertising UAE",
+    "Abu Dhabi website design",
+    "Dubai website design",
+    "web advertising services",
+    "UAE business websites",
+    "digital marketing UAE",
+    "small business website UAE",
+    "professional website design",
   ],
 };
