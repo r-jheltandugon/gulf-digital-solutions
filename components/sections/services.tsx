@@ -11,60 +11,59 @@ import Container from "../layout/container";
 
 const services = [
   {
-    title: "Business Websites",
+    title: "Business Website Design",
     description:
-      "Professional websites designed to convert visitors into customers.",
+      "Modern, responsive websites designed to help UAE businesses attract customers and build trust online.",
     icon: Globe,
   },
   {
     title: "SEO Optimization",
     description:
-      "Improve your visibility on Google and attract more local customers.",
+      "Improve your Google rankings in Abu Dhabi, Dubai, and across the UAE to get more organic traffic.",
     icon: Search,
   },
   {
     title: "Mobile Optimization",
     description:
-      "Fast and responsive experiences across all devices.",
+      "Fast, mobile-friendly websites that deliver a smooth experience on all devices.",
     icon: Smartphone,
   },
   {
-    title: "WhatsApp Integration",
+    title: "WhatsApp Lead Integration",
     description:
-      "Generate direct inquiries from your website instantly.",
+      "Turn website visitors into real customers with instant WhatsApp inquiry buttons.",
     icon: MessageCircle,
   },
   {
-    title: "Branding & Design",
+    title: "Branding & UI Design",
     description:
-      "Modern and trustworthy branding for your business.",
+      "Professional branding and modern UI design that builds trust and improves conversions.",
     icon: PenTool,
   },
   {
     title: "Website Maintenance",
     description:
-      "Keep your website secure, updated, and performing well.",
+      "Ongoing updates, security, and performance optimization for your business website.",
     icon: Wrench,
   },
 ];
 
-export default function Services() {
+export default function ServicesSection() {
   return (
-    <section className="py-24">
+    <section>
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <p className="font-medium text-blue-600">
-            Our Services
+            Our Digital Services in UAE
           </p>
 
-          <h2 className="mt-4 text-3xl font-bold tracking-tight md:text-5xl">
-            Helping Businesses Grow Online
+          <h2 className="mt-4 text-3xl font-bold tracking-tight md:text-4xl">
+            Website Design & Web Advertising Solutions
           </h2>
 
           <p className="mt-6 text-lg text-slate-600 dark:text-slate-300">
-            We create modern digital experiences that help
-            businesses build trust, increase visibility, and
-            attract more customers.
+            Helping businesses in Abu Dhabi, Dubai, and across the UAE grow
+            through modern websites, SEO, and digital marketing solutions.
           </p>
         </div>
 
