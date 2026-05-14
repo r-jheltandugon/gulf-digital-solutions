@@ -1,0 +1,81 @@
+import Navbar from "@/components/layout/navbar";
+import Footer from "@/components/layout/footer";
+import CTA from "@/components/sections/cta";
+import WhatsAppButton from "@/components/ui/whatsapp-button";
+import CallButton from "@/components/ui/call-button";
+
+export default function WebsiteDesignPage() {
+  return (
+    <>
+      <Navbar />
+
+      <main className="py-24">
+        <section>
+          <div className="mx-auto max-w-3xl px-4 text-center">
+            <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
+              Website Design Services in UAE
+            </h1>
+
+            <p className="mt-6 text-lg text-slate-600 dark:text-slate-300">
+              We create modern, fast, and high-converting business websites for companies in Abu Dhabi, Dubai, and across the UAE. Our websites are designed to attract customers and generate real business leads.
+            </p>
+          </div>
+        </section>
+
+        <section className="mt-20">
+          <div className="mx-auto max-w-4xl px-4">
+            <h2 className="text-2xl font-semibold">
+              Why Your Business Needs a Professional Website
+            </h2>
+
+            <p className="mt-4 text-slate-600 dark:text-slate-300 leading-7">
+              In today’s digital world, your website is your first impression. A poorly designed website can make you lose customers, while a professional website builds trust and increases conversions.
+            </p>
+
+            <p className="mt-4 text-slate-600 dark:text-slate-300 leading-7">
+              We specialize in building websites that are optimized for performance, SEO, and user experience, helping UAE businesses stand out in a competitive market.
+            </p>
+          </div>
+        </section>
+
+        <section className="mt-20">
+          <div className="mx-auto max-w-4xl px-4">
+            <h2 className="text-2xl font-semibold">
+              What You Get
+            </h2>
+
+            <ul className="mt-6 space-y-3 text-slate-600 dark:text-slate-300">
+              <li>✔ Modern responsive design for all devices</li>
+              <li>✔ Fast loading performance</li>
+              <li>✔ SEO optimized structure</li>
+              <li>✔ WhatsApp integration for leads</li>
+              <li>✔ Custom UI tailored to your business</li>
+              <li>✔ Secure and scalable architecture</li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="mt-20">
+          <div className="mx-auto max-w-4xl px-4">
+            <h2 className="text-2xl font-semibold">
+              Who This Service Is For
+            </h2>
+
+            <p className="mt-4 text-slate-600 dark:text-slate-300 leading-7">
+              This service is perfect for small and medium businesses in Abu Dhabi and Dubai that want to build a strong online presence and attract more customers through Google search and online marketing.
+            </p>
+          </div>
+        </section>
+
+        {/* YOUR EXISTING CTA */}
+        <div className="mt-24">
+          <CTA />
+        </div>
+      </main>
+
+      <Footer />
+      <WhatsAppButton />
+      <CallButton />
+    </>
+  );
+}
