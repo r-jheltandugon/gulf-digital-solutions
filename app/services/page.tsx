@@ -41,7 +41,7 @@ export default function ServicesPage() {
 
                 <a
                   href="/portfolio"
-                  className="rounded-2xl border px-6 py-3 font-semibold transition hover:bg-slate-100 dark:hover:bg-slate-900"
+                  className="rounded-2xl border px-6 py-3 font-semibold transition hover:scale-105"
                 >
                   View Work
                 </a>
