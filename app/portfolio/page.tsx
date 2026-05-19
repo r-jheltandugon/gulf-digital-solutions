@@ -6,6 +6,19 @@ import Link from "next/link";
 import WhatsAppButton from "@/components/ui/whatsapp-button";
 import CallButton from "@/components/ui/call-button";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Portfolio - Gulf Digital Solutions",
+  
+  description:
+    "Explore our portfolio of website design and digital advertising projects for businesses in Abu Dhabi, Dubai, and across the UAE.",
+    
+  alternates: {
+    canonical: "/portfolio",
+  },
+};
+
 const projects = [
   {
     title: "Business Website Design",

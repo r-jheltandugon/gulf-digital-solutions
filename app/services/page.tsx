@@ -7,6 +7,19 @@ import WhatsAppButton from "@/components/ui/whatsapp-button";
 import CallButton from "@/components/ui/call-button";
 import Image from "next/image";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Gulf Digital Solutions - Services in Abu Dhabi, Dubai, UAE",
+  
+  description:
+    "Professional website design, web advertising, and digital solutions for businesses in Abu Dhabi, Dubai, and across the UAE.",
+    
+  alternates: {
+    canonical: "/services",
+  },
+};
+
 export default function ServicesPage() {
   return (
     <>

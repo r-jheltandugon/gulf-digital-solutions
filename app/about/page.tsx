@@ -9,6 +9,19 @@ import Footer from "@/components/layout/footer";
 import WhatsAppButton from "@/components/ui/whatsapp-button";
 import CallButton from "@/components/ui/call-button";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Gulf Digital Solutions",
+  
+  description:
+    "Learn about Gulf Digital Solutions and our website design and digital advertising services in the UAE.",
+    
+  alternates: {
+    canonical: "/about",
+  },
+};
+
 export default function AboutPage() {
   return (
     <>
