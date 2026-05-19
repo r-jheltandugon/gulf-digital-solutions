@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "/og-image.png",
+        url: "/og_image.png",
         width: 1200,
         height: 630,
         alt: "Gulf Digital Solutions",
