@@ -4,6 +4,19 @@ import CTA from "@/components/sections/cta";
 import WhatsAppButton from "@/components/ui/whatsapp-button";
 import CallButton from "@/components/ui/call-button";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Web Advertising Services in Abu Dhabi, Dubai, UAE",
+  
+  description:
+    "Professional web advertising services across the UAE for businesses.",
+    
+  alternates: {
+    canonical: "/services/website-advertising-uae",
+  },
+};
+
 export default function WebAdvertisingPage() {
   return (
     <>

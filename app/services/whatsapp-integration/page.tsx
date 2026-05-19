@@ -4,6 +4,19 @@ import CTA from "@/components/sections/cta";
 import WhatsAppButton from "@/components/ui/whatsapp-button";
 import CallButton from "@/components/ui/call-button";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "WhatsApp Integration Services in Abu Dhabi, Dubai, UAE",
+  
+  description:
+    "Website WhatsApp integration services in Abu Dhabi, Dubai, and across the UAE for businesses.",
+    
+  alternates: {
+    canonical: "/services/whatsapp-integration",
+  },
+};
+
 export default function WhatsAppIntegrationPage() {
   return (
     <>

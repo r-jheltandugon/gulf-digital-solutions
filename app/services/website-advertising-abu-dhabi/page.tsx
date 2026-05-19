@@ -5,6 +5,19 @@ import WhatsAppButton from "@/components/ui/whatsapp-button";
 import CallButton from "@/components/ui/call-button";
 import Link from "next/link";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Web Advertising Services in Abu Dhabi",
+  
+  description:
+    "Professional web advertising services in Abu Dhabi for UAE businesses.",
+    
+  alternates: {
+    canonical: "/services/website-advertising-abu-dhabi",
+  },
+};
+
 export default function WebsiteAdvertisingAbuDhabiPage() {
   return (
     <>
