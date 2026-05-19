@@ -20,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${siteConfig.url}/services`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: "monthly",
       priority: 0.9,
     },
 
@@ -34,35 +34,35 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${siteConfig.url}/services/website-advertising-abu-dhabi`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: "monthly",
       priority: 1,
     },
 
     {
       url: `${siteConfig.url}/services/website-advertising-dubai`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: "monthly",
       priority: 1,
     },
 
     {
       url: `${siteConfig.url}/services/website-advertising-uae`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: "monthly",
       priority: 1,
     },
 
     {
       url: `${siteConfig.url}/services/website-development`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: "monthly",
       priority: 0.9,
     },
 
     {
       url: `${siteConfig.url}/services/whatsapp-integration`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: "monthly",
       priority: 0.9,
     },
 
