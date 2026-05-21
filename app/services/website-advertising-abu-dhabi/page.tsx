@@ -5,6 +5,8 @@ import WhatsAppButton from "@/components/ui/whatsapp-button";
 import CallButton from "@/components/ui/call-button";
 import Link from "next/link";
 import FAQ from "@/components/sections/faq";
+import Process from "@/components/sections/process";
+import Testimonials from "@/components/sections/testimonials";
 
 import type { Metadata } from "next";
 
@@ -122,6 +124,8 @@ export default function WebsiteAdvertisingAbuDhabiPage() {
           </div>
         </section>
 
+        <Process />
+        <Testimonials />
         <FAQ />
         <CTA />
       </main>
