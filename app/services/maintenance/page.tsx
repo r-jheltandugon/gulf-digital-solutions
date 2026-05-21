@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "Professional website maintenance services in Abu Dhabi, Dubai, and across the UAE for businesses.",
     
   alternates: {
-    canonical: "/services/website-maintenance",
+    canonical: "/services/maintenance",
   },
 };
 
