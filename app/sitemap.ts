@@ -67,6 +67,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
 
     {
+      url: `${siteConfig.url}/services/website-design`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+
+    {
       url: `${siteConfig.url}/portfolio`,
       lastModified: new Date(),
       changeFrequency: "monthly",
