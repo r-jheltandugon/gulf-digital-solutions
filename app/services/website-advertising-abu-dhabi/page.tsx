@@ -4,6 +4,7 @@ import CTA from "@/components/sections/cta";
 import WhatsAppButton from "@/components/ui/whatsapp-button";
 import CallButton from "@/components/ui/call-button";
 import Link from "next/link";
+import FAQ from "@/components/sections/faq";
 
 import type { Metadata } from "next";
 
@@ -15,6 +16,15 @@ export const metadata: Metadata = {
     
   alternates: {
     canonical: "/services/website-advertising-abu-dhabi",
+  },
+
+  openGraph: {
+    title: "Web Advertising Services in Abu Dhabi",
+    description:
+      "Professional web advertising services in Abu Dhabi for businesses in the UAE.",
+    url: "/services/website-advertising-abu-dhabi",
+    siteName: "Gulf Digital Solutions",
+    type: "website",
   },
 };
 
@@ -112,10 +122,8 @@ export default function WebsiteAdvertisingAbuDhabiPage() {
           </div>
         </section>
 
-        {/* CTA */}
-        <div className="mt-24">
-          <CTA />
-        </div>
+        <FAQ />
+        <CTA />
       </main>
 
       <Footer />

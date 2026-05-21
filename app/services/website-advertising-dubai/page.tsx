@@ -4,6 +4,7 @@ import CTA from "@/components/sections/cta";
 import WhatsAppButton from "@/components/ui/whatsapp-button";
 import CallButton from "@/components/ui/call-button";
 import Link from "next/link";
+import FAQ from "@/components/sections/faq";
 
 import type { Metadata } from "next";
 
@@ -112,10 +113,8 @@ export default function WebsiteAdvertisingDubaiPage() {
           </div>
         </section>
 
-        {/* CTA */}
-        <div className="mt-24">
-          <CTA />
-        </div>
+        <FAQ />
+        <CTA />
       </main>
 
       <Footer />

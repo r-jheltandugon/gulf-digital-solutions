@@ -3,6 +3,7 @@ import Footer from "@/components/layout/footer";
 import CTA from "@/components/sections/cta";
 import WhatsAppButton from "@/components/ui/whatsapp-button";
 import CallButton from "@/components/ui/call-button";
+import FAQ from "@/components/sections/faq";
 
 import type { Metadata } from "next";
 
@@ -80,10 +81,8 @@ export default function WebsiteDesignPage() {
           </div>
         </section>
 
-        {/* YOUR EXISTING CTA */}
-        <div className="mt-24">
-          <CTA />
-        </div>
+        <FAQ />
+        <CTA />
       </main>
 
       <Footer />
