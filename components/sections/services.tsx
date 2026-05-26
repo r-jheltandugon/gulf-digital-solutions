@@ -1,9 +1,13 @@
+import Link from "next/link";
+
 import {
   Globe,
   Search,
   Smartphone,
   MessageCircle,
-  PenTool,
+  Megaphone,
+  MapPin,
+  Building2,
   Wrench,
 } from "lucide-react";
 
@@ -11,48 +15,75 @@ import Container from "../layout/container";
 
 const services = [
   {
-    title: "Business Website Design",
+    title: "Website Design",
     description:
-      "Modern, responsive websites designed to help UAE businesses attract customers and build trust online.",
+      "Modern and responsive business websites designed to help UAE companies attract customers and build trust online.",
     icon: Globe,
+    href: "/services/website-design",
   },
+
+  {
+    title: "Web Advertising UAE",
+    description:
+      "Professional web advertising solutions across the UAE designed to increase leads, visibility, and customer inquiries.",
+    icon: Megaphone,
+    href: "/services/website-advertising-uae",
+  },
+
+  {
+    title: "Web Advertising Abu Dhabi",
+    description:
+      "Targeted advertising strategies for businesses in Abu Dhabi looking to grow online and attract more customers.",
+    icon: MapPin,
+    href: "/services/website-advertising-abu-dhabi",
+  },
+
+  {
+    title: "Web Advertising Dubai",
+    description:
+      "Digital advertising services for Dubai businesses focused on visibility, lead generation, and business growth.",
+    icon: Building2,
+    href: "/services/website-advertising-dubai",
+  },
+
   {
     title: "SEO Optimization",
     description:
-      "Improve your Google rankings in Abu Dhabi, Dubai, and across the UAE to get more organic traffic.",
+      "Improve Google rankings and increase organic traffic with SEO strategies built for businesses in UAE.",
     icon: Search,
+    href: "/services/seo-optimization",
   },
+
   {
     title: "Mobile Optimization",
     description:
-      "Fast, mobile-friendly websites that deliver a smooth experience on all devices.",
+      "Fast and mobile-friendly websites optimized for smartphones, tablets, and modern devices.",
     icon: Smartphone,
+    href: "/services/mobile-optimization",
   },
+
   {
-    title: "WhatsApp Lead Integration",
+    title: "WhatsApp Integration",
     description:
-      "Turn website visitors into real customers with instant WhatsApp inquiry buttons.",
+      "Convert website visitors into real customers using direct WhatsApp inquiry and communication integration.",
     icon: MessageCircle,
+    href: "/services/whatsapp-integration",
   },
-  {
-    title: "Branding & UI Design",
-    description:
-      "Professional branding and modern UI design that builds trust and improves conversions.",
-    icon: PenTool,
-  },
+
   {
     title: "Website Maintenance",
     description:
-      "Ongoing updates, security, and performance optimization for your business website.",
+      "Ongoing website updates, performance optimization, security improvements, and technical support.",
     icon: Wrench,
+    href: "/services/maintenance",
   },
 ];
 
 export default function ServicesSection() {
   return (
-    <section>
+    <section className="py-24">
       <Container>
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-3xl text-center">
           <p className="font-medium text-blue-600">
             Our Digital Services in UAE
           </p>
@@ -61,9 +92,11 @@ export default function ServicesSection() {
             Website Design & Web Advertising Solutions
           </h2>
 
-          <p className="mt-6 text-lg text-slate-600 dark:text-slate-300">
-            Helping businesses in Abu Dhabi, Dubai, and across the UAE grow
-            through modern websites, SEO, and digital marketing solutions.
+          <p className="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-300">
+            Gulf Digital Solutions helps businesses in Abu Dhabi, Dubai,
+            and across the UAE grow through professional website design,
+            SEO optimization, mobile-friendly development, and digital
+            advertising strategies that generate real customer inquiries.
           </p>
         </div>
 
@@ -72,11 +105,12 @@ export default function ServicesSection() {
             const Icon = service.icon;
 
             return (
-              <div
+              <Link
                 key={service.title}
-                className="rounded-3xl border p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                href={service.href}
+                className="group rounded-3xl border p-8 shadow-sm transition hover:-translate-y-1 hover:border-blue-500 hover:shadow-lg"
               >
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-100">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-100 transition group-hover:bg-blue-200">
                   <Icon className="text-blue-600" />
                 </div>
 
@@ -87,7 +121,11 @@ export default function ServicesSection() {
                 <p className="mt-3 leading-7 text-slate-600 dark:text-slate-300">
                   {service.description}
                 </p>
-              </div>
+
+                <p className="mt-6 font-medium text-blue-600">
+                  Learn More →
+                </p>
+              </Link>
             );
           })}
         </div>
