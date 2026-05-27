@@ -4,21 +4,21 @@ import Container from "../layout/container";
 const testimonials = [
   {
     name: "Ahmed",
-    business: "Restaurant Owner",
+    business: "Restaurant Business in Abu Dhabi",
     quote:
       "The website made our business look far more professional online.",
     image: "/testimonials/ahmed.png",
   },
   {
     name: "Sarah",
-    business: "Beauty Salon",
+    business: "Beauty Salon in Dubai",
     quote:
       "We started receiving more WhatsApp inquiries after launch.",
     image: "/testimonials/sarah.png",
   },
   {
     name: "Michael",
-    business: "Cleaning Service",
+    business: "Cleaning Company in UAE",
     quote:
       "Fast, modern, and exactly what our business needed.",
     image: "/testimonials/michael.png",
