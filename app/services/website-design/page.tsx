@@ -7,6 +7,9 @@ import FAQ from "@/components/sections/faq";
 import Process from "@/components/sections/process";
 import Testimonials from "@/components/sections/testimonials";
 
+import Schema from "@/components/seo/schema";
+import { serviceSchema } from "@/lib/schema";
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -87,6 +90,18 @@ export default function WebsiteDesignPage() {
         <Testimonials />
         <FAQ />
         <CTA />
+        <Schema
+          data={serviceSchema({
+            title: "Website Design Services",
+
+            description:
+              "Professional website design services in Abu Dhabi, Dubai, and across the UAE for businesses.",
+
+            path: "/services/website-design",
+
+            areaServed: "Abu Dhabi, Dubai, UAE, Philippines, Eastern Samar, Tacloban City, Borongan City, Guian, Mercedes, Salcedo, General MacArthur",
+          })}
+        />
       </main>
 
       <Footer />

@@ -12,6 +12,9 @@ import CTA from "@/components/sections/cta";
 import WhatsAppButton from "@/components/ui/whatsapp-button";
 import CallButton from "@/components/ui/call-button";
 
+import Schema from "@/components/seo/schema";
+import { homeSchema } from "@/lib/schema";
+
 export default function HomePage() {
   return (
     <>
@@ -25,6 +28,7 @@ export default function HomePage() {
         <Testimonials />
         <FAQ />
         <CTA />
+        <Schema data={homeSchema()} />
       </main>
 
       <Footer />

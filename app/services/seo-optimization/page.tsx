@@ -4,6 +4,9 @@ import CTA from "@/components/sections/cta";
 import WhatsAppButton from "@/components/ui/whatsapp-button";
 import CallButton from "@/components/ui/call-button";
 
+import Schema from "@/components/seo/schema";
+import { serviceSchema } from "@/lib/schema";
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -92,6 +95,18 @@ export default function SEOOptimizationPage() {
         <div className="mt-24">
           <CTA />
         </div>
+        <Schema
+          data={serviceSchema({
+            title: "SEO Optimization Services in Abu Dhabi, Dubai, UAE",
+
+            description:
+              "Professional SEO optimization services in Abu Dhabi, Dubai, and across the UAE for businesses.",
+
+            path: "/services/seo-optimization",
+
+            areaServed: "Abu Dhabi, Dubai, UAE, Philippines, Eastern Samar, Tacloban City, Borongan City, Salcedo, Guiuan, Mercedes",
+          })}
+        />
       </main>
 
       <Footer />

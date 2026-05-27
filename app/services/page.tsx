@@ -3,17 +3,21 @@ import Footer from "@/components/layout/footer";
 import Container from "@/components/layout/container";
 
 import ServicesSection from "@/components/sections/services";
+import FAQ from "@/components/sections/faq";
 import WhatsAppButton from "@/components/ui/whatsapp-button";
 import CallButton from "@/components/ui/call-button";
 import Image from "next/image";
 
+import Schema from "@/components/seo/schema";
+import { serviceSchema } from "@/lib/schema";
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Gulf Digital Solutions - Services in Abu Dhabi, Dubai, UAE",
+  title: "Website Design, Web Development, Web Advertising & Mobile App Development Services in Abu Dhabi, Dubai, UAE",
   
   description:
-    "Professional website design, web advertising, and digital solutions for businesses in Abu Dhabi, Dubai, and across the UAE.",
+    "Professional website design, web development, web advertising, and mobile app development services for businesses in Abu Dhabi, Dubai, and across the UAE. ",
     
   alternates: {
     canonical: "/services",
@@ -177,6 +181,13 @@ export default function ServicesPage() {
           </Container>
         </section>
 
+        {/* FAQ SECTION */}
+        <section className="py-24">
+          <Container>
+            <FAQ />
+          </Container>
+        </section>
+
         {/* CTA SECTION */}
         <section className="py-24">
           <Container>
@@ -186,7 +197,7 @@ export default function ServicesPage() {
               </h2>
 
               <p className="mt-4 text-white/80">
-                Get a professional website that brings real customers in Abu Dhabi & Dubai.
+                Get a professional website designed to help businesses in Abu Dhabi, Dubai, and across the UAE attract more customers online.
               </p>
 
               <div className="mt-8 flex justify-center gap-4">
@@ -200,6 +211,19 @@ export default function ServicesPage() {
             </div>
           </Container>
         </section>
+
+        <Schema
+          data={serviceSchema({
+            title: "Gulf Digital Solutions - Website Design, Mobile Development & Web Advertising in UAE",
+
+            description:
+              "Professional website design, mobile-friendly development, SEO optimization, and web advertising services for businesses in Abu Dhabi, Dubai, and across the UAE.",
+
+            path: "/services",
+
+            areaServed: "Abu Dhabi, Dubai, United Arab Emirates, Philippines, Eastern Samar, Tacloban City, Borongan City, Salcedo, Guiuan, Mercedes",
+          })}
+        />
       </main>
 
       <Footer />

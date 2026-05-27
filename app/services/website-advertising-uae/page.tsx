@@ -7,6 +7,9 @@ import FAQ from "@/components/sections/faq";
 import Process from "@/components/sections/process";
 import Testimonials from "@/components/sections/testimonials";
 
+import Schema from "@/components/seo/schema";
+import { serviceSchema } from "@/lib/schema";
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -113,6 +116,18 @@ export default function WebAdvertisingPage() {
         <Testimonials />
         <FAQ />
         <CTA />
+        <Schema
+          data={serviceSchema({
+            title: "Web Advertising UAE",
+
+            description:
+              "Professional web advertising services in the UAE for businesses looking to increase leads and visibility.",
+
+            path: "/services/website-advertising-uae",
+
+            areaServed: "Abu Dhabi, Dubai, UAE",
+          })}
+        />
       </main>
 
       <Footer />
