@@ -53,7 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
 
     {
-      url: `${siteConfig.url}/services/website-development`,
+      url: `${siteConfig.url}/services/maintenance`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
