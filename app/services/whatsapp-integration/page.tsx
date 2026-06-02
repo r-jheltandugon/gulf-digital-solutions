@@ -3,6 +3,7 @@ import Footer from "@/components/layout/footer";
 import CTA from "@/components/sections/cta";
 import WhatsAppButton from "@/components/ui/whatsapp-button";
 import CallButton from "@/components/ui/call-button";
+import Image from "next/image";
 
 import Schema from "@/components/seo/schema";
 import { serviceSchema } from "@/lib/schema";
@@ -32,6 +33,18 @@ export default function WhatsAppIntegrationPage() {
             <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
               WhatsApp Integration for Business Websites in UAE
             </h1>
+
+            <div 
+              className="relative w-full overflow-hidden rounded-3xl shadow-lg mt-8"
+            >
+              <Image
+                src="/whatsapp-integration.png"
+                alt="WhatsApp Integration for Business Websites in UAE"
+                width={1200}
+                height={800}
+                className="h-auto w-full object-cover transition-transform duration-500 ease-in-out hover:scale-110"
+              />
+            </div>
 
             <p className="mt-6 text-lg text-slate-600 dark:text-slate-300">
               Turn your website visitors into real customers with instant WhatsApp integration for businesses in Abu Dhabi, Dubai, and across the UAE.

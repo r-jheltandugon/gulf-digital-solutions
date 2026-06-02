@@ -3,6 +3,7 @@ import Footer from "@/components/layout/footer";
 import CTA from "@/components/sections/cta";
 import WhatsAppButton from "@/components/ui/whatsapp-button";
 import CallButton from "@/components/ui/call-button";
+import Image from "next/image";
 
 import Schema from "@/components/seo/schema";
 import { serviceSchema } from "@/lib/schema";
@@ -32,6 +33,18 @@ export default function MobileOptimizationPage() {
             <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
               Mobile Optimization Services in UAE
             </h1>
+
+            <div 
+              className="relative w-full overflow-hidden rounded-3xl shadow-lg mt-8"
+            >
+              <Image
+                src="/mobile-optimization.png"
+                alt="Mobile Optimization Services in Abu Dhabi, Dubai, UAE"
+                width={1200}
+                height={800}
+                className="h-auto w-full object-cover transition-transform duration-500 ease-in-out hover:scale-110"
+              />
+            </div>
 
             <p className="mt-6 text-lg text-slate-600 dark:text-slate-300">
               We build fully responsive and mobile-friendly websites for businesses in Abu Dhabi, Dubai, and across the UAE to ensure perfect performance on all devices.

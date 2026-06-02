@@ -7,6 +7,7 @@ import Link from "next/link";
 import FAQ from "@/components/sections/faq";
 import Process from "@/components/sections/process";
 import Testimonials from "@/components/sections/testimonials";
+import Image from "next/image";
 
 import Schema from "@/components/seo/schema";
 import { serviceSchema } from "@/lib/schema";
@@ -36,6 +37,18 @@ export default function WebsiteAdvertisingDubaiPage() {
             <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
               Web Advertising Services in Dubai
             </h1>
+
+            <div 
+              className="relative w-full overflow-hidden rounded-3xl shadow-lg mt-8"
+            >
+              <Image
+                src="/dubai-web-advertising.png"
+                alt="Web Advertising Services in Dubai"
+                width={1200}
+                height={800}
+                className="h-auto w-full object-cover transition-transform duration-500 ease-in-out hover:scale-110"
+              />
+            </div>
 
             <p className="mt-6 text-lg text-slate-600 dark:text-slate-300">
               We help businesses in Dubai grow faster with targeted web advertising strategies that generate leads, calls, and WhatsApp inquiries.
