@@ -38,7 +38,7 @@ export default function WhatsAppIntegrationPage() {
               className="relative w-full overflow-hidden rounded-3xl shadow-lg mt-8"
             >
               <Image
-                src="/whatsapp-integration.png"
+                src="/whatsApp-integration.png"
                 alt="WhatsApp Integration for Business Websites in UAE"
                 width={1200}
                 height={800}
