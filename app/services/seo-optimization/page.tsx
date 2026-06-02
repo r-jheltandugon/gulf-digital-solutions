@@ -3,6 +3,10 @@ import Footer from "@/components/layout/footer";
 import CTA from "@/components/sections/cta";
 import WhatsAppButton from "@/components/ui/whatsapp-button";
 import CallButton from "@/components/ui/call-button";
+import FAQ from "@/components/sections/faq";
+import Process from "@/components/sections/process";
+import Testimonials from "@/components/sections/testimonials";
+import Image from "next/image";
 
 import Schema from "@/components/seo/schema";
 import { serviceSchema } from "@/lib/schema";
@@ -32,6 +36,18 @@ export default function SEOOptimizationPage() {
             <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
               SEO Optimization Services in UAE
             </h1>
+
+            <div 
+              className="relative w-full overflow-hidden rounded-3xl shadow-lg mt-8"
+            >
+              <Image
+                src="/seo.png"
+                alt="SEO Optimization Services in Abu Dhabi, Dubai, UAE"
+                width={1200}
+                height={800}
+                className="h-auto w-full object-cover transition-transform duration-500 ease-in-out hover:scale-110"
+              />
+            </div>
 
             <p className="mt-6 text-lg text-slate-600 dark:text-slate-300">
               Improve your Google rankings and attract more customers in Abu Dhabi, Dubai, and across the UAE with professional SEO strategies that increase visibility and organic traffic.
@@ -91,10 +107,10 @@ export default function SEOOptimizationPage() {
           </div>
         </section>
 
-        {/* CTA */}
-        <div className="mt-24">
-          <CTA />
-        </div>
+        <Process />
+        <Testimonials />
+        <FAQ />
+        <CTA />
         <Schema
           data={serviceSchema({
             title: "SEO Optimization Services in Abu Dhabi, Dubai, UAE",
