@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Providers from "@/components/theme-provider";
 import { siteConfig } from "@/lib/seo";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -74,6 +75,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <Providers>{children}</Providers>
+        <GoogleAnalytics gaId="G-3Z4X10QMVE" />
       </body>
     </html>
   );
