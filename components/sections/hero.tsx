@@ -55,7 +55,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button className="bg-slate-900 hover:bg-slate-800">
+              <Button className="bg-green-500">
                 WhatsApp Us
               </Button>
             </a>
