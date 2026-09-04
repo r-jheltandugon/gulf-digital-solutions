@@ -11,11 +11,11 @@ import { serviceSchema } from "@/lib/schema";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Website Maintenance Services in Abu Dhabi, Dubai, UAE",
-  
+  title: "Website Maintenance Services in UAE | Abu Dhabi & Dubai",
+
   description:
-    "Professional website maintenance services in Abu Dhabi, Dubai, and across the UAE for businesses.",
-    
+    "Reliable website maintenance services in Abu Dhabi, Dubai, and across the UAE. We provide website updates, security, bug fixes, performance optimization, backups, and ongoing support.",
+
   alternates: {
     canonical: "/services/maintenance",
   },
@@ -31,7 +31,7 @@ export default function WebsiteMaintenancePage() {
         <section>
           <div className="mx-auto max-w-3xl px-4 text-center">
             <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
-              Website Maintenance Services in UAE
+              Website Maintenance Services in Abu Dhabi, Dubai & UAE
             </h1>
 
             <div 
@@ -127,10 +127,10 @@ export default function WebsiteMaintenancePage() {
         </div>
         <Schema
           data={serviceSchema({
-            title: "Web Maintenance Services in Abu Dhabi, Dubai, UAE",
+            title: "Website Maintenance Services in Abu Dhabi, Dubai, UAE",
 
             description:
-              "Professional web maintenance services in Abu Dhabi, Dubai, and across the UAE for businesses looking to keep their websites up-to-date and secure.",
+              "Professional website maintenance services in Abu Dhabi, Dubai, and across the UAE, including website updates, security monitoring, bug fixes, performance optimization, backups, and ongoing technical support.",
 
             path: "/services/maintenance",
 
